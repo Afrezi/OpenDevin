@@ -14,8 +14,8 @@ class Q20Game:
     def __init__(
         self,
         item: str,
-        answerer_model: str = 'gpt-3.5-turbo-0613',
-        guesser_model: str = 'gpt-3.5-turbo-0613',
+        answerer_model: str = 'deepseek-coder',
+        guesser_model: str = 'deepseek-coder',
         num_turns: int = 20,
         temperature: float = 0.8,
         openai_api: bool = True,
@@ -47,12 +47,12 @@ class Q20Game:
         if isinstance(answerer_model, str) and not answerer_model.startswith('gpt'):
             self.user_api_base = 'http://0.0.0.0:8000/v1'
         else:
-            self.user_api_base = 'https://api.openai.com/v1'
+            self.user_api_base = 'https://api.deepseek.com/v1'
 
         if isinstance(guesser_model, str) and not guesser_model.startswith('gpt'):
             self.guesser_api_base = 'http://0.0.0.0:8000/v1'
         else:
-            self.guesser_api_base = 'https://api.openai.com/v1'
+            self.guesser_api_base = 'https://api.deepseek.com/v1'
 
         self.guesser_messages = []
 

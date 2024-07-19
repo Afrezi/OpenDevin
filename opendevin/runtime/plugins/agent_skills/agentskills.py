@@ -45,7 +45,7 @@ MSG_FILE_UPDATED = '[File updated (edited at line {line_number}). Please review 
 OPENAI_API_KEY = os.getenv(
     'OPENAI_API_KEY', os.getenv('SANDBOX_ENV_OPENAI_API_KEY', '')
 )
-OPENAI_BASE_URL = os.getenv('OPENAI_BASE_URL', 'https://api.openai.com/v1')
+OPENAI_BASE_URL = os.getenv('OPENAI_BASE_URL', 'https://api.deepseek.com/v1')
 OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-4o-2024-05-13')
 MAX_TOKEN = os.getenv('MAX_TOKEN', 500)
 
