@@ -46,7 +46,7 @@ OPENAI_API_KEY = os.getenv(
     'OPENAI_API_KEY', os.getenv('SANDBOX_ENV_OPENAI_API_KEY', '')
 )
 OPENAI_BASE_URL = os.getenv('OPENAI_BASE_URL', 'https://api.deepseek.com/v1')
-OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-4o-2024-05-13')
+OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'deepseek-coder')
 MAX_TOKEN = os.getenv('MAX_TOKEN', 500)
 
 OPENAI_PROXY = f'{OPENAI_BASE_URL}/chat/completions'
